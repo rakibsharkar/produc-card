@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto; /*change*/
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  line-height: 2rem;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+}
+
+p.top-text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 6px;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image img {
+  max-width: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content p {
+  margin: 20px 0px;
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+
+p.price {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+p.price del {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  border: none;
+}
+
+button a {
+  padding: 15px 64px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+button img {
+  display: inline-block;
+}
+
+img.mobile {
+  display: none;
+}
+
+button a:hover {
+  background-color: #1A4031;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/* Responsive Section */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 620px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .image img {
+    display: none;
+  }
+
+  img.mobile {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
